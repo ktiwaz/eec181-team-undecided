@@ -1,0 +1,12 @@
+{ "signal" : [
+  { "name": "clk",         "wave": "p......." },
+  { "name": "sync",        "wave": "0..10..."},
+  { "name": "vx",          "wave": "3..3....", "data": [5,-5] },
+  { "name": "vy",          "wave": "5.......", "data": [4] },
+  { "name": "row",         "wave": "4..4....", "data": [300,240] },
+  { "name": "column",      "wave": "6..6....", "data": [600,320] },
+  { "name": "score",       "wave": "7..7....", "data": [2,3]},
+],
+  "config" : { "hscale" : 1 }
+}
+ 
