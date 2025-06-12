@@ -145,15 +145,7 @@ always @(*) begin
 		nextstate = WAIT;
 	end
 end
-  
-  // 24 +26 +4 = 54 53:0
-  // 53
-  // 52
-  // 51
-  // 50
-  // 49:37
-  // 36:24
-  
+
   wire [12:0] Col,Row;
   assign Row = window[CENTER][CENTER][49:37];
   assign Col = window[CENTER][CENTER][36:24];
@@ -165,32 +157,7 @@ end
   assign BO = B;
   assign LO = L;
   assign RO = R;
-  
-  /*
-  box bb (
-  	.clk      (clk),
-	.reset    (rstn),
-    .out_img (out_img),
-	.row      (Row),
-	.col      (Col),
-	.V_sync   (sync),
-	.T        (T),
-	.B        (B),
-	.L        (L),
-	.R        (R),
-  .in_rect  (in_rect_1)
-  );
 
-  box_normal  box_normal_inst (
-    .clk(clk),
-    .reset(rstn),
-    .out_img(in_rect_1),
-    .row(Row),
-    .col(Col),
-    .V_sync(sync),
-    .in_rect(in_rect_2)
-  );
-*/
 
 assign in_rect_1 = 1'b0; // replace if you want to sim with the box
 assign in_rect_2 = 1'b0;
@@ -206,28 +173,7 @@ assign in_rect_2 = 1'b0;
             output_G = g_o;
             output_B = b_o;
         end
-    end  
-
-    
-		//if ((((Row == T)||(Row == B))&&(Col >= L)&&(Col <= R)) || (((Col == L)||(Col == R))&&(Row >= T)&&(Row <= B))) begin
-			//output_R = 8'b11111111;
-			//output_G = 8'b00000000;
-			//output_B = 8'b00000000;				
-    //end 
-    /*
-    else if (rect_en) begin
-      if(in_rect_1) begin
-        output_R = 8'b11111111;
-        output_G = 8'b00000000;
-        output_B = 8'b00000000;			
-      end
-      if(in_rect_2) begin
-        output_R = 8'b00000000;
-        output_G = 8'b11111111;
-        output_B = 8'b00000000;	
-      end
-    end*/
-
+    end 
 		  
     else begin
         output_R = window_R[CENTER][CENTER][7:0];
