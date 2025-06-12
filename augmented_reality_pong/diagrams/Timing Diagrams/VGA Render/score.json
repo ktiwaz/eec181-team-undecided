@@ -1,0 +1,11 @@
+{
+  "signal": [
+    { "name": "clk",       "wave": "p..." },
+    { "name": "score",     "wave": "2===", "data": ["1","1","5","9"] },
+    { "name": "row",       "wave": "3===", "data": ["r1", "r2", "r3", "r4"] },
+    { "name": "col",       "wave": "3===", "data": ["c1", "c2", "c3", "c4"] },
+    { "name": "num",       "wave": "4===", "data": ["num1","num2","num3","num4"] },
+    { "name": "score_pixel",      "wave": "5===", "data": ["1[num1]","1[num2]","5[num3]","9[num4]"]},
+  ],
+  "config": { "hscale": 1.5 }
+}

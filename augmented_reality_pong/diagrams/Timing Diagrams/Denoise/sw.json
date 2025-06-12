@@ -1,0 +1,13 @@
+{
+  "signal": [
+    { "name": "clk", "wave": "p....|...." },
+    { "name": "en",  "wave": "1....|...." },
+    { "name": "data_in", "wave": "33333|3333", "data": ["data1","data2","data3","...","...","...","..."]},
+    { "name": "line1", "wave": "     |4444", "data": ["P1-5","P2-6","P3-7"]},
+    { "name": "line2", "wave": "     |4444", "data": ["P1-5","P2-6","P3-7"]},
+    { "name": "line3", "wave": "     |4444", "data": ["P1-5","P2-6","P3-7"]},
+    { "name": "line4", "wave": "     |4444", "data": ["P1-5","P2-6","P3-7"]},
+    { "name": "line5", "wave": "     |4444", "data": ["P1-5","P2-6","P3-7"]},
+  ],
+  "config": { "hscale": 1.5 }
+}

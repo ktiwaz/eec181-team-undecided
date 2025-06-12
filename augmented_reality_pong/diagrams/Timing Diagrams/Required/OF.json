@@ -1,0 +1,17 @@
+{
+  "signal": [
+    { "name": "clk",       "wave": "p....." },
+    { "name": "R",         "wave": "5=====", "data": ["R1","R2","R3","R4","R5","R6"]},
+    { "name": "G",         "wave": "5=====", "data": ["G1","G2","G3","G4","G5","G6"]}, 
+    { "name": "B",         "wave": "5=====", "data": ["B1","B2","B3","B4","B5","B6"]},
+    { "name": "row",       "wave": "3=====", "data": ["r1", "r2", "r3", "r4", "r5", "r6"] },
+    { "name": "col",       "wave": "3=====", "data": ["c1", "c2", "c3", "c4", "c5", "c6"] },
+    { "name": "vignette",  "wave": "01..0."},
+    { "name": "greyscale", "wave": "0.1010"},    
+    { "name": "sepia",     "wave": "0..101"},    
+    { "name": "render R",  "wave": "4=====", "data": ["R1","R2(V)","R3(V+G)","R4(V+S)","R5(G)","R6(S)"]},
+    { "name": "render G",  "wave": "4=====", "data": ["G1","G2(V)","G3(V+G)","G4(V+S)","G5(G)","G6(S)"]}, 
+    { "name": "render B",  "wave": "4=====", "data": ["B1","B2(V)","B3(V+G)","B4(V+S)","B5(G)","B6(S)"]},
+  ],
+  "config": { "hscale": 1.5 }
+}
